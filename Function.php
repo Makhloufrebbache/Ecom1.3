@@ -16,4 +16,11 @@ function namelengthIsValid($nametovalid){
 
  return $response;
 }
+
+function addSalt($nameToSalt){
+$salt='unPeuDeSel';
+$saltedName=$salt.$nameToSalt.$salt;
+return $saltedName;
+}
+
 ?>

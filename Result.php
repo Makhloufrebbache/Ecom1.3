@@ -11,13 +11,17 @@ require_once("Function.php");
                 echo "</br>Mon nom est" . $name;
     }
 $nameLengthIsValid = namelengthIsValid($_POST['fname']);
-echo '</br>';
-var_dump($nameLengthIsValid);
+//echo '</br>';
+//var_dump($nameLengthIsValid);
 
 if (!namelengthIsValid('isValid')){
 //On fait le traitement
 
 }
+echo '</br>';
+$saltedName=addSalt($_POST['fname']);
+var_dump($saltedName);
+
 
  }
 ?>
